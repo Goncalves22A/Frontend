@@ -3,7 +3,7 @@ button.addEventListener("click", receiveData)
 
  async function receiveData () {
    const persons =  await fetch ("http://localhost:3333").then(response => response.json())
-
+ 
    persons.map(persons => {
     document.querySelector("main").innerHTML += `
       <section>
@@ -14,4 +14,4 @@ button.addEventListener("click", receiveData)
     </section>
     `
    })
-}
+ }
