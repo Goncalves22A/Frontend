@@ -37,6 +37,8 @@ button.onclick = () => {
 
    const {message} = response
    alert(response.message)
+
+   window.location.href = "../index.html"
 }
 
 
